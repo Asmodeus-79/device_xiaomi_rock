@@ -1,0 +1,65 @@
+<compatibility-matrix version="4.0" type="framework">
+<hal format="hidl" optional="true">
+    <name>vendor.mediatek.hardware.keymaster_attestation</name>
+    <version>1.0-1</version>
+    <interface>
+        <name>IKeymasterDevice</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>vendor.mediatek.hardware.mms</name>
+    <version>1.0-5</version>
+    <interface>
+        <name>IMms</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>vendor.mediatek.hardware.mtkcodecservice</name>
+    <version>1.0-1</version>
+    <interface>
+        <name>IMtkCodecService</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>vendor.mediatek.hardware.mtkradioex</name>
+    <version>2.0</version>
+    <interface>
+        <name>IMtkRadioEx</name>
+        <instance>imsSlot1</instance>
+        <instance>imsSlot2</instance>
+        <instance>mtkAssist1</instance>
+        <instance>mtkAssist2</instance>
+        <instance>mtkCap1</instance>
+        <instance>mtkCap2</instance>
+        <instance>mtkEm1</instance>
+        <instance>mtkEm2</instance>
+        <instance>mtkRcs1</instance>
+        <instance>mtkRcs2</instance>
+        <instance>mtkSe1</instance>
+        <instance>mtkSe2</instance>
+        <instance>mtkSlot1</instance>
+        <instance>mtkSlot2</instance>
+        <instance>mtkSmartRatSwitch1</instance>
+        <instance>mtkSmartRatSwitch2</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>vendor.mediatek.hardware.videotelephony</name>
+    <version>1.0</version>
+    <interface>
+        <name>IVideoTelephony</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>vendor.microtrust.hardware.soter</name>
+    <version>1.0</version>
+    <interface>
+        <name>ISoter</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+</compatibility-matrix>

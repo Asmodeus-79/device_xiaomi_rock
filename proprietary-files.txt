@@ -1,0 +1,72 @@
+# APNs
+product/etc/apns-conf.xml
+etc/fiveG-apns-conf.xml
+etc/xcap-apns-conf.xml
+
+# AGPS
+-app/LocationEM2/LocationEM2.apk
+-priv-app/LPPeService/LPPeService.apk
+
+# EngineerMode
+-priv-app/EngineerMode/EngineerMode.apk
+lib/libem_audio_jni.so
+lib/libem_support_jni.so
+lib/libem_wifi_jni.so
+lib64/libem_audio_jni.so
+lib64/libem_support_jni.so
+lib64/libem_wifi_jni.so
+system_ext/lib/libaudiotoolkit.so
+system_ext/lib64/libaudiotoolkit.so
+
+# MTK-IMS
+bin/vtservice
+etc/init/init.vtservice.rc
+-framework/mediatek-common.jar
+-framework/mediatek-framework.jar
+-framework/mediatek-ims-base.jar
+-framework/mediatek-ims-common.jar
+framework/mediatek-carrier-config-manager.jar
+framework/mediatek-ims-extension-plugin.jar
+framework/mediatek-gwsdv2.jar
+-framework/mediatek-telecom-common.jar
+-framework/mediatek-telephony-base.jar
+-framework/mediatek-telephony-common.jar
+-framework/mediatek-wfo-legacy.jar
+lib/libmtk_vt_wrapper.so
+lib/libmtkperf_client.so
+lib/libvcodec_cap.so
+lib/libvcodec_capenc.so
+lib/libsysenv_system.so
+lib64/libcomutils.so
+lib64/libimsma.so
+lib64/libimsma_adapt.so
+lib64/libimsma_rtp.so
+lib64/libimsma_socketwrapper.so
+lib64/libmtk_vt_service.so
+lib64/libmtk_vt_wrapper.so
+lib64/libmtkperf_client.so
+lib64/libsignal.so
+lib64/libsink.so
+lib64/libsource.so
+lib64/libvcodec_cap.so
+lib64/libvcodec_capenc.so
+lib64/libvt_avsync.so
+lib64/libsysenv_system.so
+-priv-app/ImsService/ImsService.apk
+system_ext/lib/vendor.mediatek.hardware.videotelephony@1.0.so
+system_ext/lib64/vendor.mediatek.hardware.videotelephony@1.0.so
+
+# Vibrator
+vendor/bin/hw/vendor.xiaomi.hardware.vibratorfeature.service:product/vendor_overlay/31/bin/hw/vendor.xiaomi.hardware.vibratorfeature.service
+vendor/etc/vintf/manifest/vendor.xiaomi.hardware.vibratorfeature.service.xml:product/vendor_overlay/31/etc/vintf/manifest/vendor.xiaomi.hardware.vibratorfeature.service.xml
+
+# Duraspeed
+etc/init/duraspeed.rc
+-framework/duraspeed.jar
+system_ext/priv-app/DuraSpeed/DuraSpeed.apk
+
+# OMX
+#lib/libstagefright_omx.so:product/vendor_overlay/30/lib/libstagefright_omx.so
+#lib/libstagefright_omx_utils.so:product/vendor_overlay/30/lib/libstagefright_omx_utils.so
+#lib64/libstagefright_omx.so:product/vendor_overlay/30/lib64/libstagefright_omx.so
+#lib64/libstagefright_omx_utils.so:product/vendor_overlay/30/lib64/libstagefright_omx_utils.so

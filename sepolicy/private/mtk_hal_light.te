@@ -1,0 +1,4 @@
+type sys_lcd_brightness_file, fs_type, sysfs_type;
+allow hal_light sys_lcd_brightness_file:file { getattr open read write };
+allow hal_light sysfs:file rw_file_perms;
+allow hal_light sys_lcd_brightness_file:dir { search };

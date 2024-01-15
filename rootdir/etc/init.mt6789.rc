@@ -1,0 +1,38 @@
+on init
+    mount none /vendor/lost+found /vendor/overlay bind
+    setprop sys.usb.ffs.aio_compat 1
+
+on post-fs
+    mount none /system/bin/hw/android.hardware.lights-service.mediatek /vendor/bin/hw/android.hardware.lights-service.mediatek bind
+
+on boot
+    stop console
+
+    chmod 0664 /sys/class/leds/lcd-backlight/max_brightness
+    chown system system /sys/class/leds/lcd-backlight/max_brightness
+    chmod 0664 /sys/class/leds/red/led_time
+    chown system system /sys/class/leds/red/led_time
+    chmod 0664 /sys/class/leds/red/max_brightness
+    chown system system /sys/class/leds/red/max_brightness
+    chmod 0666 /system/bin/sendevent
+    chmod 0666 /dev/input/event4
+    chmod 0666 /dev/input/event3
+    
+# Disable AOSP RIL if MTK RIL is up
+on property:vendor.ril.mtk=1
+    stop vendor.ril-daemon
+
+on property:dev.bootcomplete=1
+    chmod 0666 /dev/xiaomi-touch
+
+on property:persist.sys.MT6789.dt2w=0 && property:vendor.panel.touch_vendor=3
+    exec - root -- /system/bin/sendevent /dev/input/event4 0 1 4
+
+on property:persist.sys.MT6789.dt2w=1 && property:vendor.panel.touch_vendor=3
+    exec - root -- /system/bin/sendevent /dev/input/event4 0 1 5
+
+on property:persist.sys.MT6789.dt2w=1 && property:vendor.panel.touch_vendor=4
+    exec - root -- /system/bin/sendevent /dev/input/event3 0 1 5
+
+on property:persist.sys.MT6789.dt2w=0 && property:vendor.panel.touch_vendor=4
+    exec - root -- /system/bin/sendevent /dev/input/event3 0 1 4

@@ -1,0 +1,66 @@
+# MTK Service
+phoneEx                     u:object_r:mtk_radio_service:s0
+capctrl                     u:object_r:mtk_radio_service:s0
+smartratswitch              u:object_r:mtk_radio_service:s0
+
+iphonesubinfoEx                                         u:object_r:mtk_phonesubinfo_service:s0
+mtksimphonebook                                         u:object_r:mtk_simphonebook_service:s0
+
+# Radio
+imsa                        u:object_r:radio_service:s0
+mtkIms                      u:object_r:radio_service:s0
+GbaService                  u:object_r:radio_service:s0
+isubstub                    u:object_r:radio_service:s0
+wfo                         u:object_r:radio_service:s0
+imtksms                     u:object_r:radio_service:s0
+mwis                        u:object_r:radio_service:s0
+
+# VTService
+media.VTS                                               u:object_r:vtservice_service:s0
+media.VTS.HiDL                                          u:object_r:vtservice_hidl_service:s0
+
+# Audio AIDL interface
+android.hardware.bluetooth.audio.IBluetoothAudioProviderFactory/sysbta    u:object_r:hal_audio_service:s0
+
+# Keystore
+android.system.keystore2.IKeystoreService/default                              u:object_r:keystore_service:s0
+android.security.remoteprovisioning                                            u:object_r:remoteprovisioning_service:s0
+android.security.remoteprovisioning.IRemotelyProvisionedKeyPool                u:object_r:remotelyprovisionedkeypool_service:s0
+android.service.gatekeeper.IGateKeeperService                                  u:object_r:gatekeeper_service:s0
+android.hardware.keymaster::IKeymasterDevice                                   u:object_r:hal_keymaster_hwservice:s0
+
+# Ims
+vendor.mediatek.hardware.mtkradioex.data.IMtkRadioExData/slot1           u:object_r:hal_radio_service:s0
+vendor.mediatek.hardware.mtkradioex.data.IMtkRadioExData/slot2           u:object_r:hal_radio_service:s0
+vendor.mediatek.hardware.mtkradioex.data.IMtkRadioExData/slot3           u:object_r:hal_radio_service:s0
+vendor.mediatek.hardware.mtkradioex.data.IMtkRadioExData/slot4           u:object_r:hal_radio_service:s0
+vendor.mediatek.hardware.mtkradioex.ims.IMtkRadioExIms/slot1             u:object_r:hal_radio_service:s0
+vendor.mediatek.hardware.mtkradioex.ims.IMtkRadioExIms/slot2             u:object_r:hal_radio_service:s0
+vendor.mediatek.hardware.mtkradioex.ims.IMtkRadioExIms/slot3             u:object_r:hal_radio_service:s0
+vendor.mediatek.hardware.mtkradioex.ims.IMtkRadioExIms/slot4             u:object_r:hal_radio_service:s0
+vendor.mediatek.hardware.mtkradioex.messaging.IMtkRadioExMessaging/slot1 u:object_r:hal_radio_service:s0
+vendor.mediatek.hardware.mtkradioex.messaging.IMtkRadioExMessaging/slot2 u:object_r:hal_radio_service:s0
+vendor.mediatek.hardware.mtkradioex.messaging.IMtkRadioExMessaging/slot3 u:object_r:hal_radio_service:s0
+vendor.mediatek.hardware.mtkradioex.messaging.IMtkRadioExMessaging/slot4 u:object_r:hal_radio_service:s0
+vendor.mediatek.hardware.mtkradioex.modem.IMtkRadioExModem/slot1         u:object_r:hal_radio_service:s0
+vendor.mediatek.hardware.mtkradioex.modem.IMtkRadioExModem/slot2         u:object_r:hal_radio_service:s0
+vendor.mediatek.hardware.mtkradioex.modem.IMtkRadioExModem/slot3         u:object_r:hal_radio_service:s0
+vendor.mediatek.hardware.mtkradioex.modem.IMtkRadioExModem/slot4         u:object_r:hal_radio_service:s0
+vendor.mediatek.hardware.mtkradioex.network.IMtkRadioExNetwork/slot1     u:object_r:hal_radio_service:s0
+vendor.mediatek.hardware.mtkradioex.network.IMtkRadioExNetwork/slot2     u:object_r:hal_radio_service:s0
+vendor.mediatek.hardware.mtkradioex.network.IMtkRadioExNetwork/slot3     u:object_r:hal_radio_service:s0
+vendor.mediatek.hardware.mtkradioex.network.IMtkRadioExNetwork/slot4     u:object_r:hal_radio_service:s0
+vendor.mediatek.hardware.mtkradioex.sim.IMtkRadioExSim/slot1             u:object_r:hal_radio_service:s0
+vendor.mediatek.hardware.mtkradioex.sim.IMtkRadioExSim/slot2             u:object_r:hal_radio_service:s0
+vendor.mediatek.hardware.mtkradioex.sim.IMtkRadioExSim/slot3             u:object_r:hal_radio_service:s0
+vendor.mediatek.hardware.mtkradioex.sim.IMtkRadioExSim/slot4             u:object_r:hal_radio_service:s0
+vendor.mediatek.hardware.mtkradioex.voice.IMtkRadioExVoice/slot1         u:object_r:hal_radio_service:s0
+vendor.mediatek.hardware.mtkradioex.voice.IMtkRadioExVoice/slot2         u:object_r:hal_radio_service:s0
+vendor.mediatek.hardware.mtkradioex.voice.IMtkRadioExVoice/slot3         u:object_r:hal_radio_service:s0
+vendor.mediatek.hardware.mtkradioex.voice.IMtkRadioExVoice/slot4         u:object_r:hal_radio_service:s0
+vendor.mediatek.hardware.mtkradioex.rcs.IMtkRadioExRcs/slot1             u:object_r:hal_radio_service:s0
+vendor.mediatek.hardware.mtkradioex.rcs.IMtkRadioExRcs/slot2             u:object_r:hal_radio_service:s0
+vendor.mediatek.hardware.mtkradioex.rcs.IMtkRadioExRcs/slot3             u:object_r:hal_radio_service:s0
+vendor.mediatek.hardware.mtkradioex.rcs.IMtkRadioExRcs/slot4             u:object_r:hal_radio_service:s0
+android.hardware.radio.modem.IRadioModem/imsSlot1                        u:object_r:hal_radio_service:s0
+android.hardware.radio.modem.IRadioModem/imsSlot2                        u:object_r:hal_radio_service:s0

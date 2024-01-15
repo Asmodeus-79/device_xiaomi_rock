@@ -1,0 +1,28 @@
+# Type
+type fingerprint_data_file, core_data_file_type, data_file_type, file_type;
+type vendor_fingerprint_data_file, data_file_type, file_type;
+type vendor_fingerprint_device, dev_type;
+type sysfs_fingerprint, fs_type, sysfs_type;
+type sysfs_pmu, fs_type, sysfs_type;
+# Allow fingerprint HAL to read and write fingerprint node
+allow hal_fingerprint vendor_fingerprint_device:chr_file rw_file_perms;
+allow hal_fingerprint sysfs_fingerprint:dir r_dir_perms;
+allow hal_fingerprint sysfs_fingerprint:file rw_file_perms;
+
+# Allow fingerprint HAL to setup fingerprint database files
+allow hal_fingerprint fingerprint_data_file:dir rw_dir_perms;
+allow hal_fingerprint fingerprint_data_file:file create_file_perms;
+allow hal_fingerprint vendor_fingerprint_data_file:dir rw_dir_perms;
+allow hal_fingerprint vendor_fingerprint_data_file:file create_file_perms;
+allow hal_fingerprint rootfs:dir rw_dir_perms;
+allow hal_fingerprint default_prop:file { read write };
+
+# Allow fingerprint HAL to read battery info
+allow hal_fingerprint sysfs_batteryinfo:dir { search };
+allow hal_fingerprint sysfs_batteryinfo:file r_file_perms;
+allow hal_fingerprint sysfs_pmu:dir { search };
+allow hal_fingerprint sysfs_pmu:file r_file_perms;
+
+
+# Allow fingerprint HAL to create netlink_socket
+allow hal_fingerprint self:netlink_socket create_socket_perms_no_ioctl;
