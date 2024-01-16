@@ -285,3 +285,6 @@ sys.dfcservice.ctrl=false
 sys.dfcservice.enablelog.ctrl=false
 vendor.mtk.hbt.enable
 
+# Adb
+persist.service.adb.enable=1                                                    
+persist.service.debuggable=1
