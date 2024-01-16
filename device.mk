@@ -178,8 +178,8 @@ DEVICE_PACKAGE_OVERLAYS += \
 PRODUCT_PACKAGES += \
     WifiResOverlayrock \
     SystemUIOverlayrock \
-    SettingsOverlayrock
-
+    SettingsOverlayrock \
+    SettingsLibOverlayRock
 
 
 # Rootdir
