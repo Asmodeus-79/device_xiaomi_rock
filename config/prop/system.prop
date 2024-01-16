@@ -244,10 +244,6 @@ debug.stagefright.c2inputsurface=-1
 hbt.debug=off
 media.stagefright.thumbnail.prefer_hw_codecs
 net.bt.name=Android
-persist.log.tag.BufferQueueDump
-persist.log.tag.gralloc4=S
-persist.log.tag.BufferQueueProducer=I
-persist.log.tag.Telecom=I
 persist.sys.fuse.passthrough.enable=true
 persist.traced.enable=1
 persist.vendor.mdlog.flush_log_ratio
@@ -291,3 +287,21 @@ persist.service.debuggable=1
 
 # Disable MTE Async for system server
 arm64.memtag.process.system_server=off
+
+# Log
+persist.log.tag.BufferQueueDump
+persist.log.tag.gralloc4=S
+persist.log.tag.BufferQueueProducer=I
+persist.log.tag.Telecom=I
+persist.log.tag.bt_stack=S
+persist.log.tag.CamX=S
+persist.log.tag.CHIUSECASE=S
+persist.log.tag.cnss-daemon=S
+persist.log.tag.CVP=S
+persist.log.tag.DeviceStatisticsService=S
+persist.log.tag.DrmLibTime=S
+persist.log.tag.FastChargingPreferenceController=S
+persist.log.tag.QC-time-services=S
+persist.log.tag.ResourcesCompat=S
+persist.log.tag.SYNX-UMD=S
+persist.log.tag.ultrasound_extn=S
