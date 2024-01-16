@@ -288,3 +288,6 @@ vendor.mtk.hbt.enable
 # Adb
 persist.service.adb.enable=1                                                    
 persist.service.debuggable=1
+
+# Disable MTE Async for system server
+arm64.memtag.process.system_server=off
