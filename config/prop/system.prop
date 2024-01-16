@@ -313,3 +313,6 @@ ro.sf.skip_set_active_mode_when_off=1
 suspend.short_suspend_threshold_millis=2000
 suspend.short_suspend_backoff_enabled=true
 suspend.max_sleep_time_millis=40000
+
+# Brightness gamma
+persist.sys.brightness.low.gamma=true
