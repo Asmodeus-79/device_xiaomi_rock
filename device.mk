@@ -179,8 +179,6 @@ PRODUCT_PACKAGES += \
     WifiResOverlayrock \
     SystemUIOverlayrock \
     SettingsOverlayrock \
-    SettingsLibOverlayRock
-
 
 # Rootdir
 PRODUCT_PACKAGES += \
